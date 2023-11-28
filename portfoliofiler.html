@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>portfolio With Filters</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+    }
+</style>
+
+
+<script>
+$(document).ready(function(){
+
+    // Toggles paragraphs display
+    $("#button1").click(function(){
+        $("#naturea").toggle();
+		$("#natureb").toggle();
+		$("#naturec").toggle();
+        $("#monumenta").hide();
+		$("#monumentb").hide();
+		$("#monumentc").hide();
+    });
+
+	
+	
+});
+$(document).ready(function(){
+    // Toggles paragraphs display
+    $("#button2").click(function(){
+        $("#naturea").hide();
+		$("#natureb").hide();
+		$("#naturec").hide();
+        $("#monumenta").toggle();
+		$("#monumentb").toggle();
+		$("#monumentc").toggle();
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="toggle-btn" id="button1"><h1>html projects</h1></button> 
+	<button type="button" class="toggle-btn" id="button2"><h1>advanced html projects</h1></button> 
+
+    <p style ="display:none" id="naturea">
+	<a href="https://edberttan.github.io/HCI-ASSIGNMENT-02/">hotel room admission</a>
+	<br>
+	<a href="https://edberttan.github.io/HCI-ASSIGNMENT-03/">old porfolio</a>
+	</p>
+	
+    <p style ="display:none" id="monumenta">
+	<a href="https://edberttan.github.io/HCL-forum-week-6/">smart home control panel</a>
+	<br>
+	</p>
+</body>
+</html>
